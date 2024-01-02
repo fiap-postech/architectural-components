@@ -1,0 +1,6 @@
+@startuml Componentes do google
+
+component gson {
+}
+
+@enduml

@@ -1,0 +1,60 @@
+@startuml componentes microsoft usados no Digio
+
+rectangle "PIX" as PIX <<grupo>> {
+    component MIP
+}
+
+rectangle "MP" as MP <<grupo>> {
+    component MeiosPagamento
+}
+
+rectangle "IBK" as IBK <<grupo>> {
+    component InternetBanking
+}
+
+rectangle "Stand-In" as Standin <<grupo>> {
+    component StandIn
+}
+
+rectangle "Core" as Core <<grupo>> {
+    component ContaCorrente
+    component SLC
+    component Convenios
+    component CadastrosCentrais
+    component Emprestimo
+    component SEC
+    component Open
+    component VJDBC
+    component Informes
+    component Cobranca
+    component SCA
+    component LiquidacaoFinanceira
+}
+
+rectangle "Remunerador" as Rem <<grupo>> {
+    component Remunerador
+}
+
+rectangle "Gestão" as Gestao <<grupo>> {
+    component ContasAReceber
+    component ContasAPagar
+    component Contabilidade
+    component FN
+}
+
+rectangle "Bacen JUD" as BacenJUD <<grupo>> {
+    component JUD
+    component CSS
+    component STA
+}
+
+rectangle "Indexador" as MateraIndexador <<grupo>> {
+    component Indexador
+}
+
+rectangle "SPB" as MateraSPB <<grupo>> {
+    component SPB
+}
+
+
+@enduml

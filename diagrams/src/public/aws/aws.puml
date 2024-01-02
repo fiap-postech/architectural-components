@@ -1,0 +1,14 @@
+@startuml Componentes AWS usados no Digio
+
+note "A ser atualizado" as trabalhoIncompleto
+
+rectangle AWS as AWS {
+    component Glue
+    component KinesisFirehose
+    component OpenSearchService
+    component APIGateway
+    component SNS
+    component SQS
+}
+
+@enduml

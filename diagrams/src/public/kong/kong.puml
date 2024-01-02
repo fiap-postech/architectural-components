@@ -1,0 +1,7 @@
+@startuml componentes Kong usados no Digio
+
+rectangle Kong as KongCO {
+    component KongGatewayManager
+}
+
+@enduml

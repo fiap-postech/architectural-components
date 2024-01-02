@@ -1,0 +1,3 @@
+!include Aurora.puml
+!include AuroraInstance.puml
+!include AuroraMySQLInstance.puml

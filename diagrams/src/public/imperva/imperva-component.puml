@@ -1,0 +1,7 @@
+@startuml componentes microsoft usados no Digio
+
+rectangle Imperva as ImpervaCO {
+    component Imperva
+}
+
+@enduml

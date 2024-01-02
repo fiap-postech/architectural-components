@@ -1,0 +1,35 @@
+{
+    "name": "PlantUML Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest",
+            "enableNonRootDocker": "true",
+            "moby": "true"
+        }
+    },
+    "runArgs": [
+        "--privileged"
+    ],
+    "postCreateCommand": "docker run -d -p 9099:8080 plantuml/plantuml-server:jetty",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "jebbs.plantuml"
+            ],
+            "settings": {
+                "plantuml.exportFormat": "png",
+                "plantuml.render": "PlantUMLServer",
+                "plantuml.server": "http://localhost:9099",
+                "plantuml.diagramsRoot": "diagrams/src",
+                "plantuml.exportOutDir": "diagrams/out"
+            }
+        }
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder}/.,target=/workspace,type=bind,consistency=cached"
+    ],
+    "remoteEnv": {
+        "localWorkspaceFolder": "${localWorkspaceFolder}"
+    }
+}

@@ -1,0 +1,7 @@
+@startuml componentes microsoft usados no Digio
+
+rectangle Neurotech as NeurotechCO {
+    component Neurotech
+}
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml componentes microsoft usados no Digio
+
+component Windows
+component ADFS
+component Office365
+
+@enduml

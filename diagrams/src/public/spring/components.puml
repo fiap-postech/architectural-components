@@ -1,0 +1,6 @@
+@startuml Componentes do spring
+
+component "spring-data-commons" as springDataCommons {
+}
+
+@enduml

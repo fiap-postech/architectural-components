@@ -1,0 +1,15 @@
+@startuml Componentes do spring-boot
+
+component "spring-boot-starter-web" as springBootStarterWeb {
+}
+component "spring-boot-starter-actuator" as springBootStarterActuator {
+}
+component "spring-boot-devtools" as springBootDevtools {
+}
+component "spring-boot-starter-logging" as springBootStarterLogging {
+}
+component "spring-boot-starter-test" as springBootStarterTest <<test>> {
+}
+component "spring-boot-maven-plugin" as springBootMavenPlugin <<build>> {
+}
+@enduml

@@ -1,0 +1,26 @@
+@startuml Componentes da comunidade
+
+component "commons-io" as commonsIo {
+}
+component "querydsl-jpa" as querydslJpa {
+}
+component "querydsl-core" as querydslCore {
+}
+component "springdoc-openapi-ui" as springdocOpenapiUi {
+}
+component "flyway-core" as flywayCore {
+}
+component "fixture-factory" as fixtureFactory <<test>> {
+}
+component "powermock-module-junit4" as powermockModuleJunit4 <<test>> {
+}
+component "powermock-api-mockito2" as powermockApiMockito2 <<test>> {
+}
+component "junit-vintage-engine" as junitVintageEngine <<test>> {
+}
+component "mockito-core" as mockitoCore <<test>> {
+}
+component "h2" as h2 <<test>> {
+}
+
+@enduml

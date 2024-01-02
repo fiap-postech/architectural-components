@@ -1,0 +1,9 @@
+@startuml componentes microsoft usados no Digio
+
+rectangle Dock as DockCO {
+    component Pierlabs
+    component DataHub
+    component DockAPI
+}
+
+@enduml
